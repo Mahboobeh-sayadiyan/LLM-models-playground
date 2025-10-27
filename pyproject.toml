@@ -1,0 +1,48 @@
+[project]
+name = "llm-models-playground"
+version = "0.1.0"
+description = "A fun and experimental Python project for playing around with LLM models"
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv",
+    "requests",
+    "numpy",
+    "pandas",
+    "hf-xet==1.1.9",
+    "scipy",
+    "torch",
+    "jupyterlab",
+    "ipywidgets",
+    "matplotlib",
+    "scikit-learn",
+    "chromadb",
+    "jupyter-dash",
+    "pyarrow",
+    "beautifulsoup4",
+    "plotly",
+    "transformers",
+    "sentence-transformers",
+    "datasets==3.6.0",
+    "openai",
+    "anthropic",
+    "google-generativeai",
+    "gradio",
+    "gensim",
+    "modal",
+    "ollama",
+    "psutil",
+    "setuptools",
+    "speedtest-cli",
+    "langchain",
+    "langchain-core",
+    "langchain-text-splitters",
+    "langchain-openai",
+    "langchain-chroma",
+    "langchain-community",
+    "feedparser",
+    "twilio",
+    "pydub",
+    "protobuf==3.20.2",
+    "wandb",
+]
+

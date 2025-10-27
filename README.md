@@ -51,7 +51,30 @@ This will:
 - Install all project dependencies
 - Make the project ready to run Python scripts and Jupyter notebooks
 
+
+The easiest way to get started is by running the web interface:
+
+**On macOS/Linux:**
+```bash
+./run.sh
+```
+
+**On Windows:**
+```batch
+run.bat
+```
+
+**Or manually with UV:**
+```bash
+uv sync
+uv run python app.py
+```
+
+This will launch a beautiful web interface at `http://localhost:7860` where you can interact with LLM models through a user-friendly interface! 🎉
+
 ## Usage
+
+### Running Python Scripts
 
 After running `uv sync`, you can run Python files and Jupyter notebooks using:
 
@@ -59,7 +82,9 @@ After running `uv sync`, you can run Python files and Jupyter notebooks using:
 uv run python your_script.py
 ```
 
-or to start Jupyter:
+### Running Jupyter Lab
+
+To start Jupyter Lab:
 
 ```bash
 uv run jupyter lab
@@ -72,7 +97,16 @@ If you prefer to use Anaconda instead of UV, you can set up the environment usin
 ```bash
 conda env create -f environment.yml
 conda activate llm-models-playground
+```
+
+Then run the Gradio interface:
+```bash
+python app.py
+```
+
+Or start Jupyter Lab:
+```bash
 jupyter lab
 ```
 
-This will create a conda environment with all the required dependencies and allow you to run the Jupyter notebooks.
+This will create a conda environment with all the required dependencies and allow you to run both the Gradio app and Jupyter notebooks.
